@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <p id="b"></p>
+    <script>
+        let ar=["apple","banana","orange"]
+        document.getElementById("a").innerHTML=ar
+        ar.splice(1,0,"grapes")
+            document.getElementById("b").innerHTML = ar
+
+    </script>
+</body>
+</html>
+
+<!-- 📌 Syntax
+array.splice(start, deleteCount, item1, item2, ...)
+🔹 Parameters
+start → index where operation begins
+deleteCount (optional) → number of elements to remove
+item1, item2... (optional) → elements to add -->
