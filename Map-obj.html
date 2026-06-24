@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script> 
+        let a=new Map();
+        a.set(1,"one");
+        a.set("1","string one")
+        console.log(a)
+    </script>-->
+
+    <script>
+        let a=new Map([
+            ["name","fathi"],
+            ["age",21]
+        ]);
+        a.set("place","kannur")
+        console.log(a)
+        console.log(a.get("name"))
+        console.log(a.has("skill"))
+        a.delete("age")
+        console.log(a)
+        // a.clear()
+        // console.log(a)
+        a.set("place","payyannur")
+        console.log(a)
+        console.log(a.size)
+
+    </script>
+</body>
+</html>
