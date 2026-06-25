@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let person={name:"lilly"};
+    function greet(city,state){
+        console.log("hello",this.name,city,state)
+    }
+    greet.apply(person,["land","hogward"])
+   </script> 
+</body>
+</html>
